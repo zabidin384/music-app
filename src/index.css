@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.buttonStyle {
+		@apply border-[2px] rounded-[10px] border-[#232A4E] px-[25px] py-[7px] hover:text-blue-700;
+	}
+	.downloadImgStyle {
+		@apply border-[2px] border-[#232A4E] rounded-[13px] h-[3rem] w-[10rem] cursor-pointer;
+	}
+	.liStyle {
+		@apply mr-[3rem] cursor-pointer hover:text-[#f307c0] hover:font-bold;
+	}
+	.socialStyle {
+		@apply rounded-full border-2 border-white p-2 mr-[5rem] cursor-pointer hover:text-[#f307c0] hover:border-[#f307c0];
+	}
+}
